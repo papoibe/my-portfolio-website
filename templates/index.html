@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Lê Nguyễn Phước Thịnh</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="/">Thinh Lee</a></div>
+            <ul>
+                <li><a href="/">Trang Chủ</a></li>
+                <li><a href="/projects">Dự Án</a></li>
+                <li><a href="/contact">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1>Lê Nguyễn Phước Thịnh</h1>
+                    <h2>IT Student & Aspiring Data Engineer</h2>
+                    <p>
+                      Sinh viên với nền tảng kiến thức kép về <strong>Công nghệ thông tin</strong> và <strong>Kỹ thuật dữ liệu</strong>. Đam mê xây dựng các giải pháp phần mềm hiệu quả và khai thác sức mạnh của dữ liệu. Sẵn sàng học hỏi và đóng góp vào các dự án đầy thử thách.
+                    </p>
+                </div>
+                <img src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="Avatar Lê Nguyễn Phước Thịnh" class="avatar">
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Công nghệ & Kỹ năng</h2>
+            <div class="skill-category">
+                <h3>Backend & Database</h3>
+                <div class="logo-grid">
+                    <div class="skill-item"><img src="{{ url_for('static', filename='images/logos/python.png') }}" alt="Python"><span>Python</span></div>
+                    <div class="skill-item"><img src="{{ url_for('static', filename='images/logos/csharp.png') }}" alt="C#"><span>C# & .NET</span></div>
+                    <div class="skill-item"><img src="{{ url_for('static', filename='images/logos/flask.png') }}" alt="Flask"><span>Flask</span></div>
+                    <div class="skill-item"><img src="{{ url_for('static', filename='images/logos/sql-server.png') }}" alt="SQL Server"><span>SQL Server</span></div>
+                    <div class="skill-item"><img src="{{ url_for('static', filename='images/logos/mysql.png') }}" alt="MySQL"><span>MySQL</span></div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Data Science & Engineering</h3>
+                <div class="logo-grid">
+                    <div class="skill-item"><img src="{{ url_for('static', filename='images/logos/pandas.png') }}" alt="Pandas"><span>Pandas</span></div>
+                    <div class="skill-item"><img src="{{ url_for('static', filename='images/logos/numpy.png') }}" alt="Numpy"><span>Numpy</span></div>
+                    <div class="skill-item"><img src="{{ url_for('static', filename='images/logos/scikit-learn.png') }}" alt="Scikit-learn"><span>Scikit-learn</span></div>
+                    <div class="skill-item"><img src="{{ url_for('static', filename='images/logos/matplotlib.png') }}" alt="Matplotlib"><span>Matplotlib</span></div>
+                </div>
+            </div>
+             <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="logo-grid">
+                    <div class="skill-item"><img src="{{ url_for('static', filename='images/logos/html.png') }}" alt="HTML5"><span>HTML5</span></div>
+                    <div class="skill-item"><img src="{{ url_for('static', filename='images/logos/css.png') }}" alt="CSS3"><span>CSS3</span></div>
+                    <div class="skill-item"><img src="{{ url_for('static', filename='images/logos/javascript.png') }}" alt="JavaScript"><span>JavaScript</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Học Vấn</h2>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <h3>Đại học Mở TP.HCM </h3>
+                    <p><strong>Chuyên ngành:</strong> Công nghệ Thông tin </p>
+                    <p><em>2022 - 2026 </em></p>
+                </div>
+                <div class="edu-card">
+                 <h3>FUNiX - Đào tạo Lập trình trực tuyến </h3>
+                   <p><strong>Chuyên ngành:</strong> Kỹ thuật Dữ liệu (Data Engineering)</p>
+                    <p><em>8/2024 - 9/2025 </em></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Lê Nguyễn Phước Thịnh.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự Án | Lê Nguyễn Phước Thịnh</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="/">Thinh Le</a></div>
+            <ul>
+                <li><a href="/">Trang Chủ</a></li>
+                <li><a href="/projects">Dự Án</a></li>
+                <li><a href="/contact">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="projects">
+            <h2>Dự Án Nổi Bật</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-content">
+                        <h3>Hệ thống Quản lý Nhà hàng</h3>
+                        <p><strong>Công nghệ:</strong> .NET Framework, C# WinForms, MS SQL Server.</p>
+                        <p><strong>Mô tả:</strong> Xây dựng ứng dụng desktop quản lý toàn diện hoạt động nhà hàng, từ đặt món, thanh toán đến quản lý kho và nhân viên.</p>
+                        <a href="https://github.com/papoibe/Final_RestaurantManagement" target="_blank" class="btn">Xem trên GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                     <div class="card-content">
+                        <h3>Khai phá dữ liệu sự hài lòng của hành khách hàng không</h3>
+                        <p><strong>Công nghệ:</strong> Python, Pandas, Scikit-learn, Matplotlib.</p>
+                        <p><strong>Mô tả:</strong> Phân tích và xây dựng mô hình dự đoán sự hài lòng của hành khách, áp dụng các thuật toán Classification, Clustering, và Association Rule Mining.</p>
+                        <a href="https://github.com/papoibe/data-mining-flight" target="_blank" class="btn">Xem trên GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                     <div class="card-content">
+                        <h3>Cửa hàng Sách Online</h3>
+                        <p><strong>Công nghệ:</strong> Python Flask, MySQL, HTML/CSS/JS.</p>
+                        <p><strong>Mô tả:</strong> Phát triển website thương mại điện tử cho phép người dùng xem, tìm kiếm sách, quản lý giỏ hàng và thực hiện thanh toán.</p>
+                        <a href="https://github.com/papoibe/Book-Store" target="_blank" class="btn">Xem trên GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Lê Nguyễn Phước Thịnh.</p>
+    </footer>
+</body>
+</html>
